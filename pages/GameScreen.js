@@ -13,7 +13,7 @@ function GameScreen() {
     const [count, setCount] = useState(0);
     useEffect(() => {
          axios
-                .get("https://itch.io/api/1/mB1KIK0NQylQ18dzPyP3cumYHCUi9p0UEcf3nPtA/my-games")
+                .get("https://itch.io/api/1/HIDDEN_FOR_PRIVACY_PURPOSE/my-games")
                 .then((res) => setData(res.data.games[count]))
                 .catch((e) => Alert.alert("Gagal!", e));
     }, [count]);
